@@ -1,0 +1,53 @@
+{
+  "name": "license-plate",
+  "version": "1.0.0",
+  "description": "Verify license",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "nyc --reporter=html nyc --reporter=text --reporter=lcovonly mocha --timeout 9000 --exit",
+    "coverage": "codeclimate-test-reporter < coverage/lcov.info"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jadewale/license-plate.git"
+  },
+  "keywords": [
+    "license",
+    "search",
+    "plate"
+  ],
+  "author": "Demilade Bamgbose",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jadewale/license-plate/issues"
+  },
+  "homepage": "https://github.com/jadewale/license-plate#readme",
+  "devDependencies": {
+    "babel-eslint": "7",
+    "chai": "^4.1.2",
+    "chai-http": "^4.0.0",
+    "coveralls": "^3.0.1",
+    "eslint": "3.x",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0",
+    "mocha": "^5.0.5",
+    "nodemon": "^1.17.2",
+    "nyc": "^11.7.3"
+  },
+  "dependencies": {
+    "africastalking": "^0.3.2",
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "dotenv": "^5.0.1",
+    "express": "^4.16.3",
+    "fcm-push": "^1.1.3",
+    "firebase": "^4.12.0",
+    "jusibe": "^1.0.3",
+    "mongoose": "^5.0.12",
+    "morgan": "^1.9.0",
+    "twilio": "^3.14.0"
+  }
+}
