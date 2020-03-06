@@ -1,7 +1,5 @@
 # Notifier System
-[![Build Status](https://travis-ci.org/jadewale/Notifier.svg?branch=master)](https://travis-ci.org/jadewale/Notifier)[![Maintainability](https://api.codeclimate.com/v1/badges/f7b6527c53e8f3cc2484/maintainability)](https://codeclimate.com/github/jadewale/license-plate/maintainability)    [![Test Coverage](https://api.codeclimate.com/v1/badges/f7b6527c53e8f3cc2484/test_coverage)](https://codeclimate.com/github/jadewale/license-plate/test_coverage)
-
-
+  
 Notifier is a cron job which helps check a field on firebase and sends a notification to the user as push notification and also an sms every 6 hours. It was used here as a plate number notification api
 
 Development

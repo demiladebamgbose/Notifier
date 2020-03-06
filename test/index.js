@@ -42,7 +42,7 @@ describe('Users Cron Job', () => {
     it('Should Test add user adds a user to the database', (done) => {
       const userData = {
         token: 'IEDHFGKKSHS',
-        email: 'jbadewale@yahoo.com',
+        email: 'jb@yahoo.com',
         phoneNumber: '09097438705',
       };
 
@@ -60,14 +60,14 @@ describe('Users Cron Job', () => {
     it('Should Test get user retrieves a user from the database', (done) => {
       const userData = {
         data: {
-          email: 'jbadewale@yahoo.com',
+          email: 'jb@yahoo.com',
         },
         time: '2018-10-03',
       };
 
       UsersController.postUser({
         token: 'IEDHFGKKSHS',
-        email: 'jbadewale@yahoo.com',
+        email: 'jb@yahoo.com',
         phoneNumber: '09097438705',
       }).then(((response) => {
         expect(response).to.have.property('email');
@@ -86,7 +86,7 @@ describe('Users Cron Job', () => {
     it('Should test push notification was sent to the user and database was updated', (done) => {
       Service.createUser({
         token: 'IEDHFGKKSHS',
-        email: 'jbadewale@yahoo.com',
+        email: 'jb@yahoo.com',
         phoneNumber: '+2349097438705',
       }).then((res) => {
         Service.fetchUserData().then((resp) => {
@@ -101,7 +101,7 @@ describe('Users Cron Job', () => {
     it('Should test push notification was sent to the user, sms was sent using twillo and database was updated', (done) => {
       Service.createUser({
         token: 'IEDHFGKKSHS',
-        email: 'jbadewale@yahoo.com',
+        email: 'jb@yahoo.com',
         phoneNumber: '+24412344',
       }).then((res) => {
         Service.fetchUserData().then((resp) => {

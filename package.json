@@ -10,7 +10,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/jadewale/license-plate.git"
   },
   "keywords": [
     "license",
@@ -20,9 +19,7 @@
   "author": "Demilade Bamgbose",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jadewale/license-plate/issues"
   },
-  "homepage": "https://github.com/jadewale/license-plate#readme",
   "devDependencies": {
     "babel-eslint": "7",
     "chai": "^4.1.2",
